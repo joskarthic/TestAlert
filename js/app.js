@@ -19,7 +19,6 @@ angular.module('starter', ['ionic'])
 })
 
 .controller("ExampleController", function($scope) {
- alert("Test");
     $scope.confirmDialog = function() {
         navigator.notification.confirm("Checkout this confirmation dialog", function(buttonIndex) {
             switch(buttonIndex) {
@@ -32,8 +31,6 @@ angular.module('starter', ['ionic'])
                
             }
         }, "Our Title", [ "Decline", "Accept" ]);
-		// Beep twice!
-navigator.notification.beep(2);
     }
  
 });
