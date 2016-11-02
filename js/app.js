@@ -31,6 +31,8 @@ angular.module('starter', ['ionic'])
                
             }
         }, "Our Title", [ "Decline", "Accept" ]);
+		// Beep twice!
+navigator.notification.beep(2);
     }
  
 });
